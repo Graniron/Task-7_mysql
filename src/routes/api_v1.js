@@ -17,18 +17,22 @@ router.delete('/organization/:id',  organizationController.delete);
 // USER
 // -------------------------------------------------------
 router.post('/user',  userController.create);
+router.put('/user/:id', userController.update);
+router.delete('/user/:id', userController.delete);
+
+router.get('/organization/:orgId/users', userController.getByOrg)
 
 // -------------------------------------------------------
 // Homework
 // -------------------------------------------------------
 
-// 1. update user API
+// 1. update user API +
 
-// 2. delete user API
+// 2. delete user API +
 
-// 3. get all user by organization id
+// 3. get all user by organization id + 
 
-// 3a. get list of user by organization id and filter by title specified in query string
+// 3a. get list of user by organization id and filter by title specified in query string +
 
 
 module.exports = router;
